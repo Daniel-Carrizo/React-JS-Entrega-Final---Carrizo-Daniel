@@ -1,17 +1,23 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics";
+import { getFirestore} from "firebase/firestore";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDnrXcfm2DFzzbMwVd2ty4oydZ9qSnGiB8",
-  authDomain: "carpishop-eb6ea.firebaseapp.com",
-  projectId: "carpishop-eb6ea",
-  storageBucket: "carpishop-eb6ea.appspot.com",
-  messagingSenderId: "380430211990",
-  appId: "1:380430211990:web:ad8ce8cba96769b84bdbb7"
+  apiKey: "AIzaSyBqgNrzuYIKrulSsnAw3ofrUTAA3ReT8Io",
+  authDomain: "vememoda-b0826.firebaseapp.com",
+  projectId: "vememoda-b0826",
+  storageBucket: "vememoda-b0826.appspot.com",
+  messagingSenderId: "383551182870",
+  appId: "1:383551182870:web:b7257ce9d038fcaf6bbd37",
+  measurementId: "G-ZCEWKENMWR"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 export const db = getFirestore(app);

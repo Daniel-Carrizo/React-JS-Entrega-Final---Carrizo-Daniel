@@ -8,7 +8,7 @@ const CartWidget = () => {
   // Define the CSS styles for the cart icon and the number badge
   const cartIconStyles = {
     fontSize: '24px',
-    color: '#333',
+    color: 'white',
     textDecoration: 'none',
     position: 'relative',
     display: 'inline-block',
